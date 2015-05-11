@@ -4,17 +4,6 @@
   <meta charset=utf-8>
 {% endif %}
 
-<!-- Beautify Android -->
-<meta name="theme-color" content="#b6e8f5">
-<!-- For IE 9 and below. ICO should be 32x32 pixels in size -->
-<!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
-
-<!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. --> 
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-<!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
-<link rel="icon" href="favicon.png">
-
 <title>
   {{ amsf_page_title }}{{ amsf_site_title }}
 </title>
@@ -34,6 +23,26 @@
 <!-- DNS prefetching for static files -->
 {% if page.permalink == '/' %}<link rel=dns-prefetch href="{{ site.file }}">{% endif %}
 
+<!-- Beautify Android -->
+
+{% if page.title == 'Oops‽' %}
+	<meta name="theme-color" content="#c5694d">
+	{% else %}
+{% if page.scheme-bg %}
+	<meta name="theme-color" content="{{ page.scheme-text }}">
+	{% else %}
+	{% endif %}
+		<meta name="theme-color" content="#b6e8f5">
+{% endif %}
+<!-- For IE 9 and below. ICO should be 32x32 pixels in size -->
+<!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
+
+<!-- Touch Icons - iOS and Android 2.1+ 180x180 pixels in size. --> 
+<link rel="apple-touch-icon" href="{{ site.file }}/apple-touch-icon.png">
+
+<!-- Firefox, Chrome, Safari, IE 11+ and Opera. 196x196 pixels in size. -->
+<link rel="icon" href="{{ site.file }}/favicon.png">
+
 <!-- browser-sync, don't remove this -->
 <!-- BS_INSERT -->
 
@@ -41,4 +50,3 @@
 {% if page.head %}
   {{ page.head }}
 {% endif %}
-</body>
