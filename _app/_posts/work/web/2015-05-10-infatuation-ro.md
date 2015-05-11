@@ -4,14 +4,15 @@ title: Infatuation RO
 category: work
 tag: web
 excerpt: Web Design facelift for Ragnarok Online private game server.
-thumb: infatuation-ro.png
-plugin: intense
+thumb: infatuation-ro.jpg
 scheme-text: "#a48cd3"
 scheme-link: "#cabce5"
 scheme-hover: "#fff"
 scheme-code: "#ecde3d"
 scheme-bg: "#655673"
 ---
+
+<p><img src="{{ site.img }}/infatuation-ro.png"></p>
 
 <p class=browser><img src="{{ site.img }}/infatuation-ro-large.png"></p>
 
