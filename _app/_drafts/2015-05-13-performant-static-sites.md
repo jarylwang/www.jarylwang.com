@@ -24,6 +24,11 @@ Aside from having enjoyed Jekyll and Hyde recently, there are compelling reasons
 - Lots of development activity (Most updated static generator)
 - Write in Markdown.
 
+The framework I've quite shamelessly used without much changes is AMSF. It really is like nothing I've seen before. It's just 1 html page with 1 request, and having a small page size meant <strong>insane</strong> page load times. If you don't believe me, here is a screencap.
+
+<img src="{{ site.img }}/gtmetrix.png" alt="GTMetrix Score">
+
+
 > Netlify × CloudFlare
 
 ## Netlify
