@@ -26,14 +26,21 @@
 <!-- Beautify Android -->
 
 {% if page.title == 'Oops‽' %}
-	<meta name="theme-color" content="#c5694d">
+		<meta name="theme-color" content="#c5694d">
+{% elsif page.scheme-bg %}
+	{% if page.scheme-text == '#fff' or page.scheme-text == '#fffff' %}
+	<meta name="theme-color" content="{{ page.scheme-link }}">
 	{% else %}
-{% if page.scheme-bg %}
-	<meta name="theme-color" content="{{ page.scheme-text }}">
-	{% else %}
+		<meta name="theme-color" content="{{ page.scheme-text }}">	
 	{% endif %}
-		<meta name="theme-color" content="#b6e8f5">
 {% endif %}
+
+
+{% unless page.scheme-bg and page.title != 'Oops‽' %}
+	<meta name="theme-color" content="#b6e8f5">
+{% endunless %}
+		
+	
 <!-- For IE 9 and below. ICO should be 32x32 pixels in size -->
 <!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
 
