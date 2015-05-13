@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Markdown Features Test
-category: note
+category: blog
 hidden: true
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Markup Example
-category: note
+category: blog
 plugin: intense
 hidden: true
 ---
