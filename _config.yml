@@ -153,8 +153,8 @@ picture:
         media: "(min-width: 400px)"
         width: 400
       source_device_1024:
-        media: "(min-width: 1024px)"
+        media: "(min-device-width: 1024px)"
         width: 1024
       source_device_480:
-        media: "(min-width: 480px)"
+        media: "(min-device-width: 480px)"
         width: 480        
