@@ -3,6 +3,7 @@ layout: post
 title: Heart Aura Sprite
 category: work
 tag: others
+tags: heart, aura, spriting, ragnarok online, eAthena
 excerpt: Elegant spriting for Ragnarok Online aura effect.
 thumb: heart-aura.jpg
 scheme-text: "#fff"

@@ -4,9 +4,6 @@ title: Performant Websites
 category: blog
 hidden: true
 ---
-> I'm Back
-
-Finally, after having bought a MacBook Air, I have once again put up my online site. It was indeed a great pity that I lost most of my stuff, but I've put up what I could recover.
 
 ## Static: The right choice for the future
 
@@ -19,18 +16,15 @@ It's also important to note that page load times are factored in search engine r
 ## Static Site Generator - Jekyll & AMSF
 Aside from having enjoyed Jekyll and Hyde recently, there are compelling reasons why Jekyll was perfect for the job as a static site generator.
 
-- Runs on Ruby (OS X ships with Ruby)
+- Runs on Ruby 
 - Great plugins and workflows available
-- Lots of development activity (Most updated static generator)
-- Write in Markdown.
+- Lots of development activity, always updated
+- Write in Markdown
 
-The framework I've quite shamelessly used without much changes is AMSF. It really is like nothing I've seen before. It's just 1 html page with 1 request, and having a small page size meant <strong>insane</strong> page load times. If you don't believe me, here is a screencap.
+The framework I've quite shamelessly used without much changes is AMSF. It's just 1 html page with 1 request, and having a small page size meant <strong>insane</strong> page load times. If you don't believe me, here is a screencap.
 
 <img src="{{ site.img }}/gtmetrix.png" alt="GTMetrix Score">
 
-
-> Netlify × CloudFlare
-
-## Netlify
+## Choosing a good host
 
 <code>To be continued..</code>

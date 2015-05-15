@@ -3,6 +3,7 @@ layout: post
 title: Infatuation RO
 category: work
 tag: web
+tags: ragnarok online, private server, website, web design, flux, control panel, eAthena, purple, gray, dark
 excerpt: Web Design facelift for Ragnarok Online private game server.
 thumb: infatuation-ro.jpg
 scheme-text: "#a48cd3"
@@ -12,9 +13,9 @@ scheme-code: "#ecde3d"
 scheme-bg: "#655673"
 ---
 
-<p><img src="{{ site.img }}/infatuation-ro.png"></p>
+<p>{% picture infatuation-ro.png alt="InfatuationRO on Devices" %}</p>
 
-<p class=browser><img src="{{ site.img }}/infatuation-ro-large.png"></p>
+<p class=browser>{% picture infatuation-ro-large.png alt="InfatuationRO Web Design" %}</p>
 
 ## Skills
 - eAthena

@@ -3,6 +3,7 @@ layout: post
 title: Game Banners
 category: work
 tag: others
+tags: banner, game, signature, forum, ragnarok online, mu online
 scheme-text: "#c28955"
 scheme-link: "#ff8500"
 scheme-hover: "#9e4614"

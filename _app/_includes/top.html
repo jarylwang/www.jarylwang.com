@@ -1,5 +1,4 @@
 <!doctype html>
-<head>
 {% if site.force_utf_8 %}
   <meta charset=utf-8>
 {% endif %}
@@ -10,8 +9,10 @@
 
 <meta name=viewport content="width=device-width, initial-scale=1">
 
-<!-- Define a description for better SEO result -->
+<!-- Define a description / tags for better SEO result -->
 <meta name=description content="{{ amsf_site_desc }}">
+
+<meta name=keywords content="{{ page.tags }}">
 
 <link rel=alternate href="{{ amsf_feed_url }}" type=application/atom+xml>
 
