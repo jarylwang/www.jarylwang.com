@@ -139,13 +139,13 @@ picture:
   presets:
     # Full width pictures
     default:
-      ppi: [1, 1.5]
+      ppi: [1, 1.5, 2]
       attr:
         class: blog-full
         itemprop: image
       source_lrg:
         media: "(min-width: 40em)"
-        width: 700
+        width: 1000
       source_med:
         media: "(min-width: 30em)"
         width: 450
