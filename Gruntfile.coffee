@@ -410,7 +410,6 @@ module.exports = (grunt) ->
         "csscomb"
         "jekyll:dist"
         "concurrent:dist"
-        "clean:postDist"
         "reset"
       ]
 
