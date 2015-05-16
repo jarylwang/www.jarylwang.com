@@ -4,7 +4,7 @@
 {% endif %}
 
 <title>
-  {{ amsf_page_title }}{{ amsf_site_title }}
+  {{ amsf_page_title }}{% unless page.permalink == '/' %}{{ amsf_site_title }}{% endunless %}
 </title>
 
 <meta name=viewport content="width=device-width, initial-scale=1">
@@ -16,7 +16,7 @@
 
 <link rel=alternate href="{{ amsf_feed_url }}" type=application/atom+xml>
 
-{% if page.title == 'Photo Gallery' %}
+{% if page.title == 'Gallery' %}
 <link rel=stylesheet href="{{ '/css/photo.css' | prepend: site.assets | prepend: site.base }}">
 {% else %}
 <link rel=stylesheet href="{{ '/css/app.css' | prepend: site.assets | prepend: site.base }}">
@@ -26,7 +26,7 @@
 <link rel=canonical href="{{ amsf_page_url }}">
 
 <!-- DNS prefetching for static files -->
-<!--  {% if page.permalink == '/' %}<link rel=dns-prefetch href="{{ site.file }}">{% endif %} -->
+{% if page.permalink == '/' %}<link rel=dns-prefetch href="//scontent.cdninstagram.com"><link rel=dns-prefetch href="//api.instagram.com">{% endif %}
 
 <!-- Beautify Android -->
 

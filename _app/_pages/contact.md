@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Say Hi
+title: Contact
 permalink: /contact/
-desc: 电信・Contact・이메일
+desc: 电信・Say Hi!・이메일
 ---
 
 <form accept-charset="UTF-8" action="//formspree.io/jaryl@jarylwang.com" method="POST">
