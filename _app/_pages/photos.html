@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Photo
+title: Photo Gallery
 permalink: /photo/
 desc: 摄影・Fun Images・사진
 ---
@@ -9,15 +9,45 @@ desc: 摄影・Fun Images・사진
 <article>
 
 
+		<h2><center>Recent Instagram Photos from <code><a href="http://instagram.com/jarylwang">@jarylwang</a></code></center></h2>
 
-      <center>
 
-      <h1>This page is under construction.</h1>
+		<ul class="il"></ul>
 
-      <h4>Pause for <strong>REFRESH</strong>. Set to <strong><u>IMPRESS</u></strong>.</h4>
 
-      </center>
+			<button type="button" class="il-load-more" href="#">Load more...</button>
+		
+		<script src="{{ site.base }}/assets/js/jquerymin.js"></script>
+		
+		<script src="{{ site.base }}/assets/js/instalitemin.js"></script>
+		
+		<script>
+		
+			$('.il').instagramLite({
+				username: 'jarylwang',
+				clientID: '26043f6c4ea444389d671a5dbd13ac75',
+				urls: true,
+				limit: 12,
+				loadMore: '.il-load-more',
+				error: function(errorCode, errorMessage) {
+				
+					console.log('There was an error');
+				
+					if(errorCode && errorMessage) {
+				
+						alert(errorCode +': '+ errorMessage);
+					
+					}
+					
+				},
+				success: function() {
+					console.log('The request was successful!');
+				}
+			});
+		
+		</script>
 
-    
+
+		
 
 </article>

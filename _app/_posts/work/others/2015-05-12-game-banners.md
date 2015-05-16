@@ -14,8 +14,8 @@ scheme-bg-light: true
 
 <h2><center>Ragnarok Online</center></h2>
 
-<p><img src="{{ site.img }}/obsecure.jpg"></p>
-<p><img src="{{ site.img }}/vikodin.jpg"></p>
+<p><img src="{{ site.img }}/obsecure.jpg" alt="ObsecureRO"></p>
+<p><img src="{{ site.img }}/vikodin.jpg" alt="VikodinRO"></p>
 
 <p>For quite some time, I ran a banner request thread on the <a href="http://forum.ratemyserver.net/ro-graphic-coding-media/banner-request-thread/30/" title="RMS Forums">RateMyServer Forums</a>, accepting requests for private game server admins to request a banner, <strong>FOC</strong>.</p>
 

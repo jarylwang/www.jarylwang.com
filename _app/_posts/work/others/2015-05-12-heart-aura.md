@@ -13,6 +13,6 @@ scheme-code: "#39beb6"
 scheme-bg: "#317979"
 ---
 
-<p><img src="{{ site.img }}/heart-aura.jpg"></p>
+<p><img src="{{ site.img }}/heart-aura.jpg" alt="Heart Aura Sprite (eAthena)"></p>
  
 A sprite I had made for a custom aura effect for Infatuation Ragnarok Online.

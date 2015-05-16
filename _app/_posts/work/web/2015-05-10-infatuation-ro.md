@@ -13,7 +13,7 @@ scheme-code: "#ecde3d"
 scheme-bg: "#655673"
 ---
 
-<p>{% picture infatuation-ro.png alt="InfatuationRO on Devices" %}</p>
+<p><img src="{{ site.img }}/infatuation-ro.png" alt="InfatuationRO on multiple devices"></p>
 
 <p class=browser>{% picture infatuation-ro-large.png alt="InfatuationRO Web Design" %}</p>
 

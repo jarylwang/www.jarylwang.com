@@ -70,7 +70,7 @@ url:            https://www.jarylwang.com
 file:           //jwsite-a.akamaihd.net
 
 # Media assets URL used in posts, without trailing slash. ie. `<img href="{{ site.file }}/image.png">`. In the most cases this URL should be powered by a CDN provider
-img:           //jwsite-a.akamaihd.net/assets/img
+img:           /assets/img
 
 # Download files URL used in posts, ie. href="{{ site.download }}/package.zip", this should also be a CDN link just like `site.url`. There's no differences in `site.url` and `site.download`, I just use one CDN for post images and another for large download files. That's it. Remove or ignore this if you don't need it
 download:       http://dl.jarylwang.com
@@ -133,28 +133,36 @@ s3_bucket:      s3://sparanoid/
 # Jekyll PIcture Tag
 #
 picture:
-  source: assets/img/fullsize
+  source: assets/img/_fullsize
   output: assets/img
   markup: picture
   presets:
-    # Full width pictures
+    # Work
     default:
-      ppi: [1, 1.5, 2]
-      attr:
-        class: post-full
-        itemprop: image
-      source_default:
-        media: "(min-width: 1000px)"
-        width: 1000
-      source_640:
-        media: "(min-width: 640px)"
-        width: 640
+      ppi: [1, 2, 3]
       source_400:
-        media: "(min-width: 400px)"
-        width: 400
-      source_device_1024:
-        media: "(min-device-width: 1024px)"
-        width: 1024
+        media: "(max-width: 400px)"
+        width: 300
+      source_device_360:
+        media: "(max-device-width: 360px)"
+        width: 360
       source_device_480:
-        media: "(min-device-width: 480px)"
-        width: 480        
+        media: "(max-device-width: 480px)"
+        width: 480
+      source_device_768:
+        media: "(max-device-width: 768px)"
+        width: 768
+      source_640:
+        media: "(max-width: 640px)"
+        width: 400
+      source_1000:
+        media: "(max-width: 1000px)"
+        width: 627
+      source_1600:
+        media: "(max-width: 1600px)"
+        width: 980
+      source_1920:
+        media: "(max-width: 1920px)"
+        width: 1180
+      source_default:
+        width: 1500

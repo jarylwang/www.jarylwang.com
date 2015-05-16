@@ -1,5 +1,10 @@
 <!-- Insert scripts here -->
 <!-- The following code is an example use of including external JavaScript libraries -->
+
+<script src="{{ '/js/picturefillmin.js' | prepend: site.assets | prepend: site.base }}"></script>
+
+
+
 {% if page.plugin == 'intense' %}
 
   <script src="{{ '/js/intense.js' | prepend: site.assets | prepend: site.base }}"></script>
@@ -18,7 +23,7 @@
     }
   </script>
 {% endif %}
-  <script src="{{ '/js/picturefillmin.js' | prepend: site.assets | prepend: site.base }}"></script>
+
 <!-- Foot hooks -->
 {% if page.foot %}
   {{ page.foot }}
