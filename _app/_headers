@@ -5,6 +5,10 @@
  	X-XSS-Protection: 1; mode=block
 	Cache-Control: public, max-age=604800
 	
+/*.html
+
+	Cache-Control: public, max-age=86400
+	
 /favicon.ico
 
 	Cache-Control: public, max-age=31546000
