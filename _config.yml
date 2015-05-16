@@ -49,7 +49,7 @@ redcarpet:
 name:           JarylWANG.com
 
 # Site description, will appear in the document meta and Atom feed subtitle
-description:    Freelance Web Solutions and Consultation in Singapore
+description:    'I am a freelancer offering web solutions including website and eCommerce design, developmment, optimization, and consultation for startups and SMBs.'
 
 # Base URL, this is useful when I need to build site in a sub-directory (like GitHub Pages for Projects), it provides a specific URL prefix, for example, if the production site URL is http://sparanoid.com/lab/version/, set `base` to `/lab/version/24`, without trailing slash.
 # Default:      null

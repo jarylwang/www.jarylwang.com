@@ -17,14 +17,21 @@
   </url>
 
   <url>
-    <loc>{{ site.base | prepend: site.url }}/contact</loc>
+    <loc>{{ site.base | prepend: site.url }}/contact/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>{{ site.base | prepend: site.url }}/gallery</loc>
+    <loc>{{ site.base | prepend: site.url }}/gallery/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>{{ site.base | prepend: site.url }}/blog/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.3</priority>
