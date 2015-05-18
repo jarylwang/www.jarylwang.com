@@ -442,6 +442,6 @@ module.exports = (grunt) ->
 
   grunt.registerTask "deploy", "Build site + deploy to s3 & cf", [
     "build"
-    "gh-pages"
+    "buildcontrol:pages"
   ]
 
