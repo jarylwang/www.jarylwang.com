@@ -363,6 +363,18 @@ module.exports = (grunt) ->
         push: false
         pushTags: false
 
+    buildcontrol:
+      options:
+        dir: '_site'
+        commit: true
+        push: true
+        message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+      pages:
+        options:
+          remote: 'https://github.com/jarylwang/jarylwang.github.io.git'
+          branch: 'master'
+
+
   grunt.registerTask "reset", "Reset user availability", (target) ->
     grunt.config.set "replace.availability.replacements.0.to", "$1 true"
     grunt.task.run [
@@ -428,6 +440,6 @@ module.exports = (grunt) ->
 
   grunt.registerTask "deploy", "Build site + deploy to s3 & cf", [
     "build"
-    "shell:deploy"
+    "gh-pages"
   ]
 
