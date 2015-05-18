@@ -289,9 +289,11 @@ module.exports = (grunt) ->
           ".tmp"
         ]
 
+
       jekyllMetadata:
         src: [
-          "<%= config.dist %>"
+          "<%= config.dist %>/*"
+          "!<%= config.dist %>/.git"
           "<%= config.app %>/.jekyll-metadata"
         ]
 
@@ -368,11 +370,11 @@ module.exports = (grunt) ->
         dir: '_site'
         commit: true
         push: true
-        message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+        message: 'Built from commit %sourceCommit% on branch %sourceBranch%'
       pages:
         options:
-          remote: 'https://github.com/jarylwang/jarylwang.github.io.git'
-          branch: 'master'
+          remote: 'https://github.com/jarylwang/www.jarylwang.com.git'
+          branch: 'gh-pages'
 
 
   grunt.registerTask "reset", "Reset user availability", (target) ->
