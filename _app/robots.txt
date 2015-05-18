@@ -2,4 +2,4 @@
 ---
 User-agent: *
 Allow: /
-Sitemap: {{ '/sitemap/' | prepend: site.base | prepend: site.url }}
+Sitemap: {{ '/sitemap.xml' | prepend: site.base | prepend: site.url }}
